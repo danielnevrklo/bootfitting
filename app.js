@@ -29,3 +29,10 @@ inquiryForm.addEventListener('submit', event => {
   window.location.href = `mailto:jesteneni@hotovy.cz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   document.querySelector('#form-status').textContent = 'Zpráva se otevírá v poštovní aplikaci; zatím nebyla odeslána. Pokud se aplikace neotevřela, volejte +420 728 183 036.';
 });
+
+const header = document.querySelector('header');
+function updateHeader() {
+  header.classList.toggle('is-scrolled', window.scrollY > 12);
+}
+window.addEventListener('scroll', updateHeader, { passive: true });
+updateHeader();

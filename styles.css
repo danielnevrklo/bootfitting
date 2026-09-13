@@ -2,7 +2,7 @@
 
 :root { --ink:#222723; --paper:#f7f6f2; --orange:#ff895b; --muted:#656d65; --line:#dcded6; }
 * { box-sizing:border-box; }
-html { scroll-behavior:smooth; scroll-padding-top:28px; }
+html { scroll-behavior:smooth; scroll-padding-top:116px; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:'DM Sans',sans-serif; font-size:16px; line-height:1.75; }
 a { color:inherit; text-decoration:none; }
 button,input,textarea { font:inherit; }
@@ -12,7 +12,7 @@ a:focus-visible,button:focus-visible { outline:3px solid var(--orange); outline-
 [hidden] { display:none!important; }
 .skip { position:fixed; top:-80px; left:20px; background:white; padding:12px; z-index:100; }
 .skip:focus { top:10px; }
-header { min-height:92px; padding:0 5.6%; display:flex; align-items:center; justify-content:space-between; gap:30px; position:relative; z-index:20; }
+header { min-height:92px; padding:0 5.6%; display:flex; align-items:center; justify-content:space-between; gap:30px; position:sticky; top:0; z-index:20; background:var(--paper); transition:background .2s,box-shadow .2s; }
 .logo { font-family:Manrope,sans-serif; font-weight:800; letter-spacing:-1.3px; font-size:25px; display:inline-flex; align-items:center; white-space:nowrap; }
 .logo span { font-weight:500; }
 .logo i { width:7px; height:7px; background:var(--orange); margin-left:4px; align-self:flex-start; margin-top:13px; }
@@ -66,7 +66,7 @@ h2 em { color:#7a856d; }
 .models li:last-child { margin-bottom:0; }
 .models strong { display:block; font-weight:600; }
 .pricing { background:#eeefe8; }
-.pricing-meta p { font-size:15px; color:var(--muted); margin-bottom:4px; }
+.pricing-validity { margin:20px 0 0; text-align:right; font-size:13px; color:var(--muted); }
 .price-group { display:grid; grid-template-columns:1fr 2fr; border-top:1px solid #ccd1c4; padding:27px 0 15px; gap:40px; }
 .price-group h3 { font-size:20px; font-weight:600; letter-spacing:-.5px; }
 .price-label { text-align:right; color:var(--muted); font-size:13px; margin-bottom:17px; }
@@ -176,3 +176,8 @@ textarea { resize:vertical; flex:1; min-height:220px; }
   .footer-business { text-align:left; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } * { transition:none!important; } }
+
+header.is-scrolled { background:rgba(247,246,242,.83); -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px); box-shadow:0 1px 0 rgba(34,39,35,.1); }
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))) { header.is-scrolled { background:rgba(247,246,242,.96); } }
+@media(max-width:760px) { html { scroll-padding-top:100px; } }
+@media(prefers-reduced-transparency:reduce) { header.is-scrolled { background:var(--paper); -webkit-backdrop-filter:none; backdrop-filter:none; } }
