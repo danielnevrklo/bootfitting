@@ -8,8 +8,8 @@
   <meta name="theme-color" content="#222824">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/workshop.jpeg" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=4869494">
-  <script src="app.js?v=4869494" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260913-3">
+  <script src="app.js?v=20260913-3" defer></script>
 </head>
 <body>
 <a class="skip" href="#obsah">Přejít na obsah</a>
@@ -18,7 +18,7 @@
   <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" hidden>Menu</button>
   <nav id="navigation" aria-label="Hlavní navigace">
     <a href="#bootfitting">Bootfitting</a><a href="#salomon">Boty Salomon</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a>
-    <a class="nav-cta" href="tel:+420728183036">Rezervovat termín</a>
+    <a class="nav-cta" href="#kontakt">Rezervovat termín</a>
   </nav>
 </header>
 <main id="obsah">
@@ -27,7 +27,7 @@
   <div class="hero-content">
     <h1 id="hero-title">Vaše lyžáky mohou sedět <em>dokonale</em></h1>
     <p class="hero-copy">Profesionální bootfitting, vakuově tvarované vložky a prodej lyžařských bot na míru v Jizerských horách. Jízda bez bolesti a s maximální kontrolou</p>
-    <a class="button" href="tel:+420728183036">Rezervovat termín</a>
+    <a class="button" href="#kontakt">Rezervovat termín</a>
   </div>
 </section>
 <section class="section about" id="bootfitting" aria-labelledby="about-title">
@@ -40,15 +40,17 @@
   </div>
 </section>
 <section class="section salomon" id="salomon" aria-labelledby="salomon-title">
-  <div class="section-top"><h2 id="salomon-title">Prodej lyžařských bot <em>Salomon</em></h2><p class="lead">Nekupujte boty naslepo. Vyberte si skelet s expertem.</p></div>
-  <div class="sales-copy"><p>Předpokladem dokonalého fittingu je správně zvolený základní skelet. Jako specializovaná dílna nabízím pro sezónu 2026/2027 prodej vybraných top modelů značky Salomon s inovativní technologií Custom Shell HD a revolučním systémem stahování BOA.</p><p>V ceně každého zakoupeného páru je zahrnuta základní diagnostika a úvodní tepelné přizpůsobení skeletu a vnitřní botičky přímo na vaši nohu.</p></div>
+  <div class="sales-intro">
+    <div class="sales-heading"><h2 id="salomon-title">Prodej lyžařských bot <em>Salomon</em></h2><p class="lead">Nekupujte boty naslepo. Vyberte si skelet s expertem.</p></div>
+    <div class="sales-details"><p>Předpokladem dokonalého fittingu je správně zvolený základní skelet. Jako specializovaná dílna nabízím pro sezónu 2026/2027 prodej vybraných top modelů značky Salomon s inovativní technologií Custom Shell HD a revolučním systémem stahování BOA.</p><div class="fitting-included"><p>V ceně každého zakoupeného páru je zahrnuta základní diagnostika a úvodní tepelné přizpůsobení skeletu a vnitřní botičky přímo na vaši nohu.</p></div></div>
+  </div>
   <p class="stock-heading">Aktuálně naskladněné modely:</p>
   <div class="models">
     <article><h3>Sportovní a expertní úroveň</h3><p class="model-description">(Nekompromisní přenos síly)</p><ul><li><strong>Salomon S/PRO RACE 140:</strong> Závodní tuhost pro maximální odezvu.</li><li><strong>Salomon S/PRO RACE 110:</strong> Expertní výkon s mírně tolerantnější flexí.</li></ul></article>
     <article><h3>Low Volume</h3><p class="model-description">(Pro lyžaře s užším chodidlem a nižším nártem)</p><ul><li><strong>Pánské/Unisex:</strong> S/PRO ALPHA C BOA 130, S/PRO ALPHA C BOA 110.</li><li><strong>Dámské:</strong> S/PRO ALPHA C BOA 115 W, S/PRO ALPHA C BOA 105 W.</li></ul></article>
     <article><h3>Mid Volume</h3><p class="model-description">(Univerzální šířka pro standardní chodidlo)</p><ul><li><strong>Pánské/Unisex:</strong> S/PRO SUPRA DUAL BOA 130, S/PRO SUPRA DUAL BOA 120, S/PRO SUPRA S BOA 110.</li><li><strong>Dámské:</strong> S/PRO SUPRA DUAL BOA 115W, S/PRO SUPRA DUAL BOA 105W, S/PRO SUPRA S BOA 105W.</li></ul></article>
   </div>
-  <a class="button" href="tel:+420728183036">Dohodnout výběr a zkoušení bot</a>
+  <a class="button" href="#kontakt">Dohodnout výběr a zkoušení bot</a>
 </section>
 <section class="section pricing" id="cenik" aria-labelledby="pricing-title">
   <div class="section-top"><h2 id="pricing-title">Ceník služeb</h2><div class="pricing-meta"><p>Provozovatel: LM Tech Jizerky s.r.o.</p><p>Lokalita: Příchovice, Kořenov (Jizerské hory)</p><p>Platnost od: Září 2026</p></div></div>
@@ -77,7 +79,8 @@
     <div><span>E-mail:</span><a href="mailto:jesteneni@hotovy.cz">jesteneni@hotovy.cz</a></div>
     <div><span>Adresa dílny:</span><a href="https://www.google.com/maps/search/?api=1&amp;query=P%C5%99%C3%ADchovice%20665%2C%20468%2048%20Ko%C5%99enov" target="_blank" rel="noopener noreferrer">Příchovice 665, 468 48 Kořenov</a></div>
   </address>
-  <form id="inquiry-form" aria-label="Napsat zprávu / Rezervovat" aria-describedby="form-explanation">
+  <form id="inquiry-form" aria-labelledby="form-title" aria-describedby="form-explanation">
+    <h3 class="form-title" id="form-title">Napište mi</h3>
     <div class="form-fields">
       <div class="form-contact">
         <label for="name">Jméno *</label><input id="name" name="name" autocomplete="name" required maxlength="100">
@@ -92,6 +95,12 @@
   </form>
 </section>
 </main>
-<footer><p>© 2026 bootfitting.pro Provozovatel: LM Tech Jizerky s.r.o. | Příchovice 665, 468 48 Kořenov, IČO 299 86 168</p></footer>
+<footer class="site-footer">
+  <div class="footer-main">
+    <a class="logo" href="#" aria-label="bootfitting.pro – úvod">bootfitting<span>.pro</span><i></i></a>
+    <nav class="footer-nav" aria-label="Navigace v patičce"><a href="#bootfitting">Bootfitting</a><a href="#salomon">Boty Salomon</a><a href="#cenik">Ceník</a><a href="#kontakt">Kontakt</a></nav>
+  </div>
+  <div class="footer-bottom"><p>© 2026 bootfitting.pro</p><div class="footer-business"><p>Provozovatel: LM Tech Jizerky s.r.o.</p><p>Příchovice 665, 468 48 Kořenov · IČO 299 86 168</p></div></div>
+</footer>
 </body>
 </html>
