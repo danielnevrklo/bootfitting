@@ -4,15 +4,17 @@ Responzivní český web pro bootfitting v Příchovicích. Čisté HTML, CSS a 
 
 ## Obsah
 
-Texty pocházejí z dodaného Bootfitting.docx. Aktuální revize zachovává původní formulace a podle připomínek odstraňuje doplňkové slogany, číslované popisky, šipky, lištu značek, průběh fittingu a filtraci modelů. Nadpis prodeje používá uživatelem požadované „Prodej lyžařských bot Salomon“. Věta o úpravách přímo v dílně byla na jeho žádost odstraněna.
+Web má úvodní stránku a tři podstránky: `index.html` (úvod, proč u mě, prodej Salomon, postup, záchrana lyžáků, závodní boty, bootfitting, FAQ, kontakt), `boty-salomon.html`, `bootfitting.html` a `cenik.html`.
 
-Hero používá dodanou fotografii assets/workshop.jpeg v původní podobě; ořez a ztmavení jsou pouze součástí CSS. Pod bootfittingem zůstávají dvě prázdná místa pro detailní fotografie.
+Struktura a texty vycházejí z podkladů od Lukáše (HTML návrh z 26. 9. 2026 a soupis změn z 1. 10. 2026). Design, písma, barvy a fotografie zůstávají z původní verze webu. Sjezdovka je všude uváděna 400 m od dílny.
 
-Kontakt a poptávkový formulář tvoří jednu tmavou sekci. Kontaktní údaje jsou klikatelné, adresa otevírá mapu. Telefonní odkazy používají +420 728 183 036.
+Hero používá dodanou fotografii assets/workshop.jpeg v původní podobě; ořez a ztmavení jsou pouze součástí CSS. Pod úvodní sekcí a na stránce Bootfitting jsou prázdná místa pro detailní fotografie. Odkaz na Instagram je zatím prázdný (TODO v index.html).
+
+Kontakt a poptávkový formulář tvoří jednu tmavou sekci na úvodní stránce; podstránky na ni odkazují. Telefonní odkazy používají +420 728 183 036, e-mail je info@bootfitting.pro.
 
 ## Formulář
 
-Povinné jméno, e-mail a zpráva; telefon je nepovinný. Formulář pouze sestaví mailto zprávu do poštovní aplikace. Neodesílá data na server ani nepotvrzuje rezervaci. Požadovaná zástupná adresa je jesteneni@hotovy.cz. Před skutečným provozem je třeba dodat funkční adresu a případně službu přímého odesílání. O této skutečnosti informuje stručná poznámka u formuláře.
+Povinné jméno, e-mail a zpráva; telefon a výběr „Co potřebujete“ jsou nepovinné. Formulář pouze sestaví mailto zprávu do poštovní aplikace na info@bootfitting.pro. Neodesílá data na server ani nepotvrzuje rezervaci.
 
 ## Spuštění a nasazení
 

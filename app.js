@@ -20,13 +20,13 @@ document.addEventListener('keydown', event => {
 });
 
 const inquiryForm = document.querySelector('#inquiry-form');
-inquiryForm.addEventListener('submit', event => {
+if (inquiryForm) inquiryForm.addEventListener('submit', event => {
   event.preventDefault();
   if (!inquiryForm.reportValidity()) return;
   const data = new FormData(inquiryForm);
-  const subject = 'Bootfitting — poptávka';
-  const body = `Jméno: ${data.get('name')}\nE-mail: ${data.get('email')}\nTelefon: ${data.get('telephone') || 'neuveden'}\n\n${data.get('message')}`;
-  window.location.href = `mailto:jesteneni@hotovy.cz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const subject = `Bootfitting — ${data.get('interest')}`;
+  const body = `Jméno: ${data.get('name')}\nE-mail: ${data.get('email')}\nTelefon: ${data.get('telephone') || 'neuveden'}\nZájem: ${data.get('interest')}\n\n${data.get('message')}`;
+  window.location.href = `mailto:info@bootfitting.pro?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   document.querySelector('#form-status').textContent = 'Zpráva se otevírá v poštovní aplikaci; zatím nebyla odeslána. Pokud se aplikace neotevřela, volejte +420 728 183 036.';
 });
 
@@ -36,3 +36,11 @@ function updateHeader() {
 }
 window.addEventListener('scroll', updateHeader, { passive: true });
 updateHeader();
+
+function openFaqFromHash() {
+  if (!location.hash) return;
+  const target = document.querySelector(location.hash);
+  if (target && target.tagName === 'DETAILS') target.open = true;
+}
+window.addEventListener('hashchange', openFaqFromHash);
+openFaqFromHash();
