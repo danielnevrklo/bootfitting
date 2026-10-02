@@ -6,7 +6,7 @@ Responzivní český web pro bootfitting v Příchovicích. Čisté HTML, CSS a 
 
 Web má úvodní stránku a tři podstránky: `index.html` (úvod, proč u mě, prodej Salomon, postup, záchrana lyžáků, závodní boty, bootfitting, FAQ, kontakt), `boty-salomon.html`, `bootfitting.html` a `cenik.html`.
 
-Struktura a texty vycházejí z podkladů od Lukáše (HTML návrh z 26. 9. 2026 a soupis změn z 1. 10. 2026). Design, písma, barvy a fotografie zůstávají z původní verze webu. Sjezdovka je všude uváděna 400 m od dílny.
+Struktura a texty vycházejí z podkladů od Lukáše (HTML návrh z 26. 9. 2026 a soupis změn z 1. 10. 2026). Design, písma, barvy a fotografie zůstávají z původní verze webu. Sjezdovka je všude uváděna 200 m od dílny.
 
 Hero používá dodanou fotografii assets/workshop.jpeg v původní podobě; ořez a ztmavení jsou pouze součástí CSS. Pod úvodní sekcí a na stránce Bootfitting jsou prázdná místa pro detailní fotografie. Odkaz na Instagram je zatím prázdný (TODO v index.html).
 

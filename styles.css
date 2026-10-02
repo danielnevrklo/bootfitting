@@ -262,3 +262,10 @@ textarea::placeholder { color:#9aa592; }
   .button-group { width:100%; }
   .button-group .button { flex:1 1 220px; }
 }
+.cta-band { background:#242b25; color:#f7f6f2; border-top:0; }
+.cta-band p { color:#d0d7c8; }
+.cta-band h2 em { color:var(--orange); }
+.cta-band .button-ghost { color:#f7f6f2; border-color:#ffffff66; }
+.cta-band .button-ghost:hover { background:#ffffff14; }
+.contact-details .instagram { display:inline-flex; color:#f7f6f2; line-height:1; padding:2px 0; }
+.contact-details .instagram:hover { color:var(--orange); }
