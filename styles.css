@@ -269,3 +269,53 @@ textarea::placeholder { color:#9aa592; }
 .cta-band .button-ghost:hover { background:#ffffff14; }
 .contact-details .instagram { display:inline-flex; color:#f7f6f2; line-height:1; padding:2px 0; }
 .contact-details .instagram:hover { color:var(--orange); }
+
+/* Fotografie (říjen 2026) */
+.photo-pair { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:32px; }
+.photo-pair figure, .photo-single { margin:0; overflow:hidden; background:#e9ece3; }
+.photo-pair img { display:block; width:100%; aspect-ratio:3/4; object-fit:cover; }
+.photo-single { margin-top:32px; max-width:420px; }
+.photo-single img { display:block; width:100%; height:auto; }
+.photo-single.product, .model-photo { background:transparent; }
+.photo-single.product img, .model-photo img { mix-blend-mode:multiply; }
+.split-head .photo-single { margin-top:36px; }
+.model-photo { margin:-10px -10px 18px; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; }
+.model-photo img { display:block; width:100%; height:100%; object-fit:contain; }
+.model-photo-empty { border:1px dashed #b7bfad; background:#e9ece3; margin:0 0 18px; }
+
+/* Kompaktní kontakt (říjen 2026) */
+.contact { grid-template-columns:5fr 6fr; column-gap:7%; row-gap:0; align-items:start; padding-top:80px; padding-bottom:80px; }
+.contact h2 { font-size:clamp(40px,3.6vw,52px); margin-bottom:18px; }
+.contact-copy { font-size:15px; line-height:1.7; }
+.contact-info .contact-details { display:grid; grid-template-columns:1fr 1fr; gap:0 28px; margin-top:28px; padding-top:0; }
+.contact-info .contact-details>div { padding:0 0 16px; margin-bottom:16px; }
+.contact-info .contact-details>div:first-child { grid-column:1/-1; }
+.contact-info .contact-details>div:last-child { margin-bottom:16px; }
+.contact-info .contact-details span { font-size:13px; margin-bottom:4px; }
+.contact-info .contact-details a { font-size:17px; line-height:1.5; }
+.contact-info .contact-details .phone { font-size:clamp(26px,2.4vw,34px); }
+.contact form { grid-column:auto; border-top:0; padding:30px 32px 28px; background:#2c342d; border:1px solid #3d463d; }
+.contact .form-title { font-size:22px; margin-bottom:18px; }
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px 18px; }
+.form-grid .field { display:flex; flex-direction:column; gap:6px; min-width:0; }
+.form-grid .field-full { grid-column:1/-1; }
+.form-grid textarea { min-height:110px; flex:none; }
+.form-grid input, .form-grid select { padding:9px 12px; }
+.contact .form-bottom { margin-top:18px; gap:20px; }
+.contact .form-bottom .button { min-height:48px; padding:12px 22px; }
+@media(max-width:760px) {
+  .photo-pair { gap:10px; }
+  .photo-single { max-width:none; }
+  .contact { grid-template-columns:1fr; row-gap:32px; padding-top:56px; padding-bottom:56px; }
+  .contact-info .contact-details { grid-template-columns:1fr; }
+  .contact form { padding:22px 18px; }
+  .form-grid { grid-template-columns:1fr; }
+}
+.contact h2 em { white-space:nowrap; }
+.contact-info .contact-details>div:last-child { grid-column:1/-1; border-bottom:0; margin-bottom:0; padding-bottom:0; }
+.contact .form-bottom .button { white-space:nowrap; flex:none; }
+@media(max-width:760px) {
+  .contact-info .contact-details { grid-template-columns:1fr auto; }
+  .contact-info .contact-details a { font-size:16px; }
+  .form-grid textarea { min-height:100px; }
+}

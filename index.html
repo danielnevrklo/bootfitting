@@ -16,8 +16,8 @@
   {"@context":"https://schema.org","@type":"SportingGoodsStore","name":"bootfitting.pro","description":"Prodej lyžařských bot Salomon, vložky Sidas na míru a bootfitting v Jizerských horách. Pouze na objednání.","telephone":"+420728183036","email":"info@bootfitting.pro","address":{"@type":"PostalAddress","streetAddress":"Příchovice 665","postalCode":"468 48","addressLocality":"Kořenov","addressCountry":"CZ"},"areaServed":"Jizerské hory","priceRange":"$$"}
   </script>
   <link rel="preload" href="assets/workshop.jpeg" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=20261002-2">
-  <script src="app.js?v=20261002-2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261003-3">
+  <script src="app.js?v=20261003-3" defer></script>
 </head>
 <body>
 <a class="skip" href="#obsah">Přejít na obsah</a>
@@ -44,8 +44,10 @@
   <div class="about-content"><p class="lead">Špičkové lyžování začíná od nohou.</p>
     <p>Každé chodidlo je naprostý originál, ale lyžařské boty se vyrábějí jen v několika variantách. Dobré lyžování začíná tím, že je bota od začátku ve správné velikosti, šířce a objemu. A dobře vybraná bota je základ, na kterém se dá stavět.</p>
     <p>Měkká vnitřní botička totiž v obchodě schová i to, že je skelet o číslo větší nebo o pár milimetrů širší, než by měl být. Na prodejně nic netlačí. Na svahu se pak noha v botě hýbe, zvedá se pata a přenos síly na hrany lyží je pryč. Proto nohu nejdřív změřím a botu vybírám podle čísel, ne podle pocitu na koberci.</p>
-    <!-- Připravená místa pro budoucí detailní fotografie; bez doplňkových textů. -->
-    <div class="photo-placeholders" aria-hidden="true"><div></div><div></div></div>
+    <div class="photo-pair">
+      <figure><img src="assets/photos/dilna-bota-v-pripravku.jpg" width="900" height="1200" loading="lazy" alt="Závodní lyžařská bota Salomon upnutá v přípravku na pracovním stole v dílně"></figure>
+      <figure><img src="assets/photos/pec-a-vlozky-sidas.jpg" width="899" height="1200" loading="lazy" alt="Pec na tepelné tvarování botiček Salomon Custom Shell, vedle vložky a ponožky Sidas"></figure>
+    </div>
   </div>
 </section>
 <section class="section split alt" id="proc-u-me" aria-labelledby="why-title">
@@ -114,6 +116,7 @@
   </div>
 </section>
 <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+  <div class="contact-info">
   <div class="contact-intro"><h2 id="contact-title">Zastavte se <em>v dílně</em></h2><p class="contact-copy">Najdete mě v novém podkrovním studiu v srdci Jizerských hor, 400 metrů od sjezdovky. Pracuji výhradně na předchozí objednání. Díky tomu mám na vaše nohy stoprocentní soustředění a garantuji vám klidný prostor bez čekání. Výběr bot i standardní bootfitting trvá zhruba dvě hodiny, počítejte raději s malou rezervou.</p></div>
   <address class="contact-details">
     <div><span>Telefon – rezervace termínu:</span><a class="phone" href="tel:+420728183036">+420 728 183 036</a><small>Nezvedám? Nejspíš právě pracuji nebo jsem na svahu. Napište SMS, ozvu se zpět.</small></div>
@@ -122,16 +125,15 @@
     <div class="contact-social"><span>Instagram:</span><a class="instagram" href="#" rel="noopener" aria-label="bootfitting.pro na Instagramu"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true" focusable="false"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.6" cy="6.4" r="1.2" fill="currentColor"/></svg></a></div>
     <div><span>Adresa dílny:</span><a href="https://www.google.com/maps/search/?api=1&amp;query=P%C5%99%C3%ADchovice%20665%2C%20468%2048%20Ko%C5%99enov" target="_blank" rel="noopener noreferrer">Příchovice 665, 468 48 Kořenov</a><small>Jizerské hory · pouze na objednání</small></div>
   </address>
+  </div>
   <form id="inquiry-form" aria-labelledby="form-title" aria-describedby="form-explanation">
     <h3 class="form-title" id="form-title">Napište mi</h3>
-    <div class="form-fields">
-      <div class="form-contact">
-        <label for="name">Jméno *</label><input id="name" name="name" autocomplete="name" required maxlength="100">
-        <label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160">
-        <label for="telephone">Telefon</label><input id="telephone" name="telephone" type="tel" autocomplete="tel" maxlength="40">
-        <label for="interest">Co potřebujete</label><select id="interest" name="interest"><option>Nové lyžáky Salomon</option><option>Úprava stávajících bot</option><option>Vložky na míru</option><option>Závodní boty</option><option>Něco jiného</option></select>
-      </div>
-      <div class="form-message"><label for="message">Zpráva *</label><textarea id="message" name="message" required maxlength="2000" rows="7" placeholder="Kdy se vám hodí termín, jaké máte boty, co vás trápí…"></textarea></div>
+    <div class="form-grid">
+      <div class="field"><label for="name">Jméno *</label><input id="name" name="name" autocomplete="name" required maxlength="100"></div>
+      <div class="field"><label for="email">E-mail *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160"></div>
+      <div class="field"><label for="telephone">Telefon</label><input id="telephone" name="telephone" type="tel" autocomplete="tel" maxlength="40"></div>
+      <div class="field"><label for="interest">Co potřebujete</label><select id="interest" name="interest"><option>Nové lyžáky Salomon</option><option>Úprava stávajících bot</option><option>Vložky na míru</option><option>Závodní boty</option><option>Něco jiného</option></select></div>
+      <div class="field field-full"><label for="message">Zpráva *</label><textarea id="message" name="message" required maxlength="2000" rows="4" placeholder="Kdy se vám hodí termín, jaké máte boty, co vás trápí…"></textarea></div>
     </div>
     <div class="form-bottom"><button class="button" type="submit">Napsat zprávu / Rezervovat</button><p id="form-explanation">Otevře zprávu ve vaší poštovní aplikaci. Nejrychlejší cesta k termínu je telefon.</p></div>
     <p id="form-status" role="status"></p>
