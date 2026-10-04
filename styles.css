@@ -327,3 +327,5 @@ textarea::placeholder { color:#9aa592; }
 @media(max-width:760px) { .price-group .photo-single { max-width:200px; margin:8px 0 12px; } }
 .about-photo { margin:36px 0 0; background:#e9ece3; overflow:hidden; }
 .about-photo img { display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; object-position:center 42%; }
+.about-photo.fixture img { object-position:center 58%; }
+.about-content .fitting-included + .about-photo { margin-top:32px; }
