@@ -323,3 +323,5 @@ textarea::placeholder { color:#9aa592; }
 .about-head .photo-pair img { aspect-ratio:4/5; }
 @media(max-width:760px) { .about-head .photo-pair { max-width:none; margin-top:8px; } }
 .photo-pair img { height:auto; }
+.price-group .photo-single { margin-top:22px; max-width:260px; }
+@media(max-width:760px) { .price-group .photo-single { max-width:200px; margin:8px 0 12px; } }
