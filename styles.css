@@ -319,3 +319,7 @@ textarea::placeholder { color:#9aa592; }
   .contact-info .contact-details a { font-size:16px; }
   .form-grid textarea { min-height:100px; }
 }
+.about-head .photo-pair { max-width:520px; margin-top:36px; }
+.about-head .photo-pair img { aspect-ratio:4/5; }
+@media(max-width:760px) { .about-head .photo-pair { max-width:none; margin-top:8px; } }
+.photo-pair img { height:auto; }
