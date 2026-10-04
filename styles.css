@@ -331,3 +331,6 @@ textarea::placeholder { color:#9aa592; }
 .about-content .fitting-included + .about-photo { margin-top:32px; }
 .about>div:first-child .about-photo, .split-head .about-photo { max-width:520px; }
 @media(max-width:760px) { .about>div:first-child .about-photo, .split-head .about-photo { max-width:none; margin-top:20px; } }
+.contact-photo { grid-column:1/-1; margin:0 0 48px; overflow:hidden; background:#2c342d; }
+.contact-photo img { display:block; width:100%; height:auto; aspect-ratio:21/9; object-fit:cover; object-position:center 72%; }
+@media(max-width:760px) { .contact-photo { margin:0; } .contact-photo img { aspect-ratio:4/3; object-position:40% 70%; } }
